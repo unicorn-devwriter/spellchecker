@@ -1,6 +1,6 @@
 # Determines compiler based on OS
 UNAME_S := $(shell uname -s)
-ifeq ($(UNAME_S),Darwin)
+ifeq ($(UNAME_S),Darwin) #this is for Mac
     CC := clang++ -arch x86_64
 else
     CC := g++
